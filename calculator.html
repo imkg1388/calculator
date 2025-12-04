@@ -86,15 +86,16 @@ button:hover {
     <button>+</button>
   </div>
   <div class="radif">
-    <button>log</button>
+    <button>لوگاریتم</button>
     <button>تانژانت</button>
-    <button>کتانژانت</button>
+    <button>سینوس</button>
     <button>پاک کردن</button>
   </div>
   <div class="radif">
     <button>مبنای ۲</button>
     <button>مبنای ۸</button>
     <button>مبنای ۱۰</button>
+    <button>کسینوس</button>
   </div>
 </div>
 
@@ -113,9 +114,10 @@ function handleInput(val){
   if(val==='=') calculate();
   else if(val==='پاک کردن') display.value='';
   else if(val==='√') display.value=Math.sqrt(eval(display.value));
-  else if(val==='log') display.value=Math.log10(eval(display.value));
+  else if(val==='لوگاریتم') display.value=Math.log10(eval(display.value));
   else if(val==='تانژانت') display.value=Math.tan(eval(display.value));
-  else if(val==='کتانژانت') display.value=1/Math.tan(eval(display.value));
+  else if(val==='سینوس') display.value=Math.sin(eval(display.value));
+   else if(val==='کسینوس') display.value=Math.cos(eval(display.value));
   else if(val==='^') display.value+='**';
   else if(val==='مبنای ۲') display.value=parseInt(display.value).toString(2);
   else if(val==='مبنای ۸') display.value=parseInt(display.value).toString(8);
